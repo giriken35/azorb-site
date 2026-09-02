@@ -179,10 +179,20 @@ export default function Page() {
       {/* Skills & About Section */}
       <div className="grid gap-8 lg:grid-cols-2 mb-20">
         
-        {/* Skills */}
+        {/* Technologies */}
         <section className="rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
-          <h2 className="mb-10 text-3xl font-extrabold tracking-tight text-foreground">Tech Stack</h2>
+          <h2 className="mb-10 text-3xl font-extrabold tracking-tight text-foreground">Powered by</h2>
           <div className="space-y-8">
+            <div>
+              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
+              <ul className="flex flex-wrap gap-2.5">
+                {['Cursor', 'Claude 3.5', 'Gemini 1.5 Pro', 'OpenAI'].map((skill) => (
+                  <li key={skill} className="rounded-full border border-brand/30 bg-brand/5 px-5 py-2 text-sm font-bold text-brand shadow-sm">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Language / Framework</h4>
               <ul className="flex flex-wrap gap-2.5">
