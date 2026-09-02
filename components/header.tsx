@@ -1,0 +1,91 @@
+"use client"
+
+import Link from "next/link"
+import { Code, Menu, X } from "lucide-react"
+import { useState } from "react"
+
+export function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
+  const closeMenu = () => setIsMobileMenuOpen(false)
+
+  const navLinks = [
+    { href: "#services", label: "Services" },
+    { href: "#works", label: "Works" },
+  ]
+
+  return (
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
+      <div className="relative mx-auto flex h-14 max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
+        <Link 
+          href="/" 
+          className="group flex items-center gap-2.5 rounded-xl px-2 py-1.5 -ml-2 transition-all hover:bg-white/10 active:scale-95 z-50"
+          onClick={(e) => {
+            closeMenu()
+            if (window.location.pathname === '/') {
+              e.preventDefault()
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }
+          }}
+        >
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-2 text-white shadow-sm">
+            <Code className="h-4 w-4" />
+          </div>
+          <span className="text-sm font-bold tracking-tight text-foreground sm:text-base uppercase tracking-widest">
+            Azorb
+          </span>
+        </Link>
+        
+        {/* Desktop Navigation (Centered) */}
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium text-muted-foreground">
+          {navLinks.map((link) => (
+            <a key={link.href} href={link.href} className="hover:text-foreground transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        
+        <div className="hidden md:flex items-center">
+            <a href="mailto:info@azorb.co" className="text-sm font-bold bg-brand text-white px-5 py-2 rounded-full shadow-sm hover:bg-brand/90 transition-all active:scale-95">
+                Contact
+            </a>
+        </div>
+
+        {/* Mobile Hamburger Button */}
+        <button 
+          className="md:hidden flex items-center justify-center p-2 -mr-2 text-foreground z-50 transition-transform active:scale-95"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 top-14 z-40 bg-background/95 backdrop-blur-sm md:hidden animate-in fade-in slide-in-from-top-4 duration-200">
+            <nav className="flex flex-col items-center gap-6 p-8 text-sm font-semibold">
+              {navLinks.map((link) => (
+                <a 
+                  key={link.href} 
+                  href={link.href} 
+                  className="w-full text-center py-3 border-b border-border/50 text-foreground hover:text-brand transition-colors"
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a 
+                href="mailto:info@azorb.co"
+                className="w-full text-center py-3 mt-4 bg-brand text-white rounded-full font-bold shadow-sm"
+                onClick={closeMenu}
+              >
+                Contact (info@azorb.co)
+              </a>
+            </nav>
+          </div>
+        )}
+      </div>
+    </header>
+  )
+}
