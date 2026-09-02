@@ -273,10 +273,16 @@ export default function Page() {
               <p>
                 「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、自社Webサービスや自動化ツールの開発に注力する独立系プロダクトスタジオです。
               </p>
+              <div className="rounded-xl bg-brand/5 border border-brand/10 p-5 my-4">
+                <p className="text-sm font-bold text-brand mb-2">"A to Z" × "Orbit (軌道)" = Azorb</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  一度組み上げたコードが狂いなく走り続け、自律的に価値を生み出す。天体が軌道を描くような「無人で規則正しく回り続ける美しいエコシステム（自動化・SaaS）」の設計をスタジオの理念としています。
+                </p>
+              </div>
               <p>
                 基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
               </p>
-              <p className="text-sm border-t border-border/70 pt-4 mt-2">
+              <p className="text-sm border-t border-border/70 pt-4 mt-4">
                 ※ ツールに関する取材、サービス買収、および開発のご相談については、上記メールアドレスよりお問い合わせください。
               </p>
             </div>
