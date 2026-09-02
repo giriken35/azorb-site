@@ -189,7 +189,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Cursor', 'Claude 3.5', 'Gemini 1.5 Pro', 'OpenAI'].map((skill) => (
+                {['Cursor', 'Claude', 'Google AI Studio', 'OpenAI'].map((skill) => (
                   <li key={skill} className="rounded-full border border-brand/30 bg-brand/5 px-5 py-2 text-sm font-bold text-brand shadow-sm">
                     {skill}
                   </li>
@@ -199,7 +199,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Language / Framework</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Python', 'TypeScript', 'Next.js', 'React', 'Node.js', 'FastAPI'].map((skill) => (
+                {['Python', 'TypeScript', 'Next.js', 'React', 'FastAPI', 'Tailwind CSS'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
                     {skill}
                   </li>
@@ -207,9 +207,9 @@ export default function Page() {
               </ul>
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Infrastructure / Tools</h4>
+              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Infrastructure / BaaS</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['GitHub Actions', 'Vercel', 'Supabase', 'Docker', 'Playwright', 'Tailwind CSS'].map((skill) => (
+                {['Vercel', 'Supabase', 'Upstash', 'Cloudflare', 'Stripe', 'Brevo', 'GitHub'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
                     {skill}
                   </li>
@@ -244,10 +244,15 @@ export default function Page() {
                 info@azorb.co
               </a>
             </div>
-            <div className="pt-4">
+            <div className="pt-4 space-y-4">
               <p>
-                「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、独立系プロダクトスタジオとして活動しています。<br/><br/>
-                ※ ツールに関する取材や、法人様からのサービス買収・業務提携に関するお問い合わせは上記メールアドレスよりお受けしております。
+                「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、自社Webサービスや自動化ツールの開発に注力する独立系プロダクトスタジオです。
+              </p>
+              <p>
+                基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
+              </p>
+              <p className="text-sm border-t border-border/70 pt-4 mt-2">
+                ※ ツールに関する取材、サービス買収、および開発のご相談については、上記メールアドレスよりお問い合わせください。
               </p>
             </div>
           </div>
