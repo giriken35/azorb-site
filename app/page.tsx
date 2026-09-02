@@ -1,4 +1,4 @@
-import { Code2, Database, Layout, Mail, CheckCircle2, ChevronRight, Map, ExternalLink, ArrowDown } from "lucide-react"
+import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -21,13 +21,14 @@ export default function Page() {
 
           <h1 className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance leading-tight">
             <span className="text-gradient block mb-3">Azorb</span>
-            手作業を無くし、<br className="hidden sm:block" />本質的な時間を創り出す
+            ニッチな課題に、<br className="hidden sm:block" />ピンポイントで効くツールを。
           </h1>
 
           <p className="max-w-2xl text-base sm:text-lg text-muted-foreground mb-10 leading-loose">
-            データ処理の自動化ツールから、モダンなSaaSアプリケーションまで。<br className="hidden sm:block" />
-            「あったらいいな」を形にし、Web上で誰もがすぐに使える<br className="hidden sm:block" />
-            独立系プロダクト・サービスを開発・展開しています。
+            大手が手を出さない細かな業務のボトルネック解消から、<br className="hidden sm:block" />
+            日常にクスッと笑いを提供するユーモア溢れるWebアプリまで。<br className="hidden sm:block" />
+            個人開発ならではの身軽さと圧倒的なコストパフォーマンスで、<br className="hidden sm:block" />
+            「かゆいところに手が届く」プロダクトを展開しています。
           </p>
 
           <a href="#products" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-brand/90 hover:scale-105 active:scale-95">
@@ -67,30 +68,30 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Product 2: Scraping Bot */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
-              <Database className="h-16 w-16 text-blue-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+          {/* Product 2: Lifespan Timer */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-orange-500/20 to-red-500/20 flex items-center justify-center">
+              <Hourglass className="h-16 w-16 text-orange-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
             </div>
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-600">API Service</span>
-                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-600">開発中</span>
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">Life Style</span>
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">公開中</span>
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">ECサイト競合価格トラッカー</h3>
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">寿命カウントダウンタイマー</h3>
               <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
-                指定したECサイトの商品価格をクラウド上で24時間監視。価格変動時にWebhookやSlackへ即時通知を送信し、自動的な価格改定を支援するAPIプラットフォーム。
+                自分の残された人生の時間をリアルタイムで刻み続ける、少しシュールで刺激的なタイマーアプリ。遊び心の中に「今日という1日の大切さ」を再認識させるユーモアを込めています。
               </p>
               <div className="mt-auto">
-                <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
-                  Coming Soon
-                </button>
+                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
+                  アプリを見る
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Product 3: Coming Soon */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
+          {/* Product 3: Next.js Boilerplate */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-emerald-500/20 to-teal-500/20 flex items-center justify-center">
               <Layout className="h-16 w-16 text-emerald-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
             </div>
@@ -101,7 +102,7 @@ export default function Page() {
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">SaaS向けモダンUIボイラープレート</h3>
               <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
-                洗練されたグラスモーフィズムデザインと、高速なパフォーマンスを備えたNext.js製の商用利用可能なLP・管理画面テンプレート。
+                洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
               </p>
               <div className="mt-auto">
                 <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
@@ -116,38 +117,38 @@ export default function Page() {
       {/* Focus Areas Section */}
       <section id="focus" className="mb-24 scroll-mt-24">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">Focus Areas</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">プロダクト開発の軸となる3つの技術領域</p>
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">Value Proposition</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">Azorbが提供する3つの価値</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-3">
           <div className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:border-brand/30">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
-              <Code2 className="h-6 w-6" />
+              <CheckCircle2 className="h-6 w-6" />
             </div>
-            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">Automation & API</h3>
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">ニッチ課題の解決</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-loose">
-              Webスクレイピングや各種API連携を駆使し、手作業による情報収集やデータ入力を完全に自動化する仕組みを構築します。
+              市場規模が小さく大企業が参入しないような「局所的だけど確実に誰かが困っている課題」を見つけ出し、ピンポイントで刺さる自動化ツールを提供します。
             </p>
           </div>
 
           <div className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:border-brand-2/30">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-2/10 text-brand-2">
-              <Database className="h-6 w-6" />
+              <Code2 className="h-6 w-6" />
             </div>
-            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">Data Processing</h3>
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">圧倒的な適正価格</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-loose">
-              表記揺れの吸収、クレンジング、大容量ファイルの高速処理など、データ活用の前準備となる面倒な工程をアルゴリズムで解決します。
+              営業や中間マージンといった無駄なコストが一切発生しない個人開発の強みを活かし、エンタープライズ品質のモダンなツールを、手に取りやすい低価格で提供します。
             </p>
           </div>
 
-          <div className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:border-blue-500/30">
-            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-500">
-              <Layout className="h-6 w-6" />
+          <div className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:border-orange-500/30">
+            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500">
+              <Sparkles className="h-6 w-6" />
             </div>
-            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">Modern UI/UX</h3>
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">遊び心とユーモア</h3>
             <p className="text-muted-foreground text-sm sm:text-base leading-loose">
-              優れたツールであっても、使いづらければ意味がありません。Next.jsと最新のCSS設計により、直感的で触り心地の良いインターフェースを提供します。
+              無機質な業務効率化だけでなく、使っていて「クスッ」と笑えるようなユーモア溢れるアイデアツールも開発。日常のスパイスになるような体験を大切にしています。
             </p>
           </div>
         </div>
@@ -193,7 +194,7 @@ export default function Page() {
             </div>
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">事業内容</strong>
-              <span className="text-right">自社Webサービスの企画・開発・運営<br/>自動化ツールの提供</span>
+              <span className="text-right">自社Webサービスの企画・開発・運営<br/>ニッチ領域向け自動化ツールの提供</span>
             </div>
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">お問い合わせ</strong>
@@ -203,8 +204,8 @@ export default function Page() {
             </div>
             <div className="pt-4">
               <p>
-                特定のクライアントに向けた受託開発（クライアントワーク）ではなく、Web上に公開して誰もが利用できるSaaSや買い切りツールを独自に開発しています。<br/><br/>
-                ※ 法人様からのサービス買収や、業務提携に関するお問い合わせは上記メールアドレスよりお受けしております。
+                「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、独立系プロダクトスタジオとして活動しています。<br/><br/>
+                ※ ツールに関する取材や、法人様からのサービス買収・業務提携に関するお問い合わせは上記メールアドレスよりお受けしております。
               </p>
             </div>
           </div>
