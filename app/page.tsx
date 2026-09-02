@@ -126,8 +126,12 @@ export default function Page() {
 
           {/* Product 4: Next.js Boilerplate */}
           <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-emerald-500/20 to-teal-500/20 flex items-center justify-center">
-              <Layout className="h-16 w-16 text-emerald-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/saas-boilerplate-mockup.jpg" 
+                alt="SaaS向けモダンUIボイラープレート" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
