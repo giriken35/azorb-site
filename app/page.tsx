@@ -46,6 +46,32 @@ export default function Page() {
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Product 4: Next.js Boilerplate */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/saas-boilerplate-mockup.jpg" 
+                alt="SaaS向けモダンUIボイラープレート" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
+              <div className="mb-4 flex flex-wrap gap-2">
+                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">Next.js Template</span>
+                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">開発中</span>
+              </div>
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">SaaS向けモダンUIボイラープレート</h3>
+              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+                洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
+              </p>
+              <div className="mt-auto">
+                <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
+                  Coming Soon
+                </button>
+              </div>
+            </div>
+          </div>
+
           {/* Product 1: Address Tool */}
           <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
@@ -67,32 +93,6 @@ export default function Page() {
               <div className="mt-auto">
                 <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-brand/10 px-4 py-3 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white">
                   ツールを利用する
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Product 2: Lifespan Timer */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
-              <img 
-                src="/lifespan-timer-screenshot.png" 
-                alt="寿命カウントダウンタイマー" 
-                className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6 sm:p-8">
-              <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">Life Style</span>
-                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">公開中</span>
-              </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">寿命カウントダウンタイマー</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
-                自分の残された人生の時間をリアルタイムで刻み続ける、少しシュールで刺激的なタイマーアプリ。遊び心の中に「今日という1日の大切さ」を再認識させるユーモアを込めています。
-              </p>
-              <div className="mt-auto">
-                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
-                  アプリを見る
                 </a>
               </div>
             </div>
@@ -124,32 +124,6 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Product 4: Next.js Boilerplate */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
-              <img 
-                src="/saas-boilerplate-mockup.jpg" 
-                alt="SaaS向けモダンUIボイラープレート" 
-                className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6 sm:p-8">
-              <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">Next.js Template</span>
-                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">開発中</span>
-              </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">SaaS向けモダンUIボイラープレート</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
-                洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
-              </p>
-              <div className="mt-auto">
-                <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
-                  Coming Soon
-                </button>
-              </div>
-            </div>
-          </div>
-
           {/* Product 5: Local News Aggregator */}
           <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-blue-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
@@ -175,6 +149,32 @@ export default function Page() {
               </div>
             </div>
           </div>
+          {/* Product 2: Lifespan Timer */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/lifespan-timer-screenshot.png" 
+                alt="寿命カウントダウンタイマー" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
+              <div className="mb-4 flex flex-wrap gap-2">
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">Life Style</span>
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">公開中</span>
+              </div>
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">寿命カウントダウンタイマー</h3>
+              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+                自分の残された人生の時間をリアルタイムで刻み続ける、少しシュールで刺激的なタイマーアプリ。遊び心の中に「今日という1日の大切さ」を再認識させるユーモアを込めています。
+              </p>
+              <div className="mt-auto">
+                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
+                  アプリを見る
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
