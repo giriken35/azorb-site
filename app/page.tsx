@@ -48,8 +48,12 @@ export default function Page() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Product 1: Address Tool */}
           <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-brand/20 to-brand-2/20 flex items-center justify-center">
-              <Map className="h-16 w-16 text-brand opacity-80 group-hover:scale-110 transition-transform duration-500" />
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50">
+              <img 
+                src="/address-tool-screenshot.png" 
+                alt="住所データ一括正規化ツール" 
+                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
