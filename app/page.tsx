@@ -198,11 +198,8 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Skills & About Section */}
-      <div className="grid gap-8 lg:grid-cols-2 mb-20">
-        
-        {/* Technologies */}
-        <section className="rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
+      {/* Technologies */}
+      <section className="mx-auto max-w-5xl mb-16 rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
           <div className="mb-10">
             <h2 className="text-3xl font-extrabold tracking-tight text-foreground">Powered by</h2>
             <p className="mt-2 text-sm text-muted-foreground font-medium">プロダクトを支える採用テクノロジー</p>
@@ -244,8 +241,8 @@ export default function Page() {
           </p>
         </section>
 
-        {/* About */}
-        <section className="rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
+      {/* About */}
+      <section className="mx-auto max-w-5xl mb-24 rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
           <div className="mb-10">
             <h2 className="text-3xl font-extrabold tracking-tight text-foreground">About Studio</h2>
             <p className="mt-2 text-sm text-muted-foreground font-medium">スタジオ概要と基本情報</p>
@@ -288,8 +285,6 @@ export default function Page() {
             </div>
           </div>
         </section>
-
-      </div>
 
       {/* Footer */}
       <footer className="border-t border-border/50 pt-10 pb-12 text-center text-sm text-muted-foreground">
