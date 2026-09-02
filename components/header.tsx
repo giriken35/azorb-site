@@ -11,8 +11,8 @@ export function Header() {
   const closeMenu = () => setIsMobileMenuOpen(false)
 
   const navLinks = [
-    { href: "#services", label: "Services" },
-    { href: "#works", label: "Works" },
+    { href: "#products", label: "Products" },
+    { href: "#focus", label: "Focus Areas" },
   ]
 
   return (
@@ -40,16 +40,14 @@ export function Header() {
         {/* Desktop Navigation (Centered) */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium text-muted-foreground">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-foreground transition-colors">
+            <a key={link.href} href={link.href} className="hover:text-foreground transition-colors font-bold tracking-wide">
               {link.label}
             </a>
           ))}
         </nav>
         
         <div className="hidden md:flex items-center">
-            <a href="mailto:info@azorb.co" className="text-sm font-bold bg-brand text-white px-5 py-2 rounded-full shadow-sm hover:bg-brand/90 transition-all active:scale-95">
-                Contact
-            </a>
+            {/* Removed active contact button, keeping it clean for product-led studio */}
         </div>
 
         {/* Mobile Hamburger Button */}
@@ -75,13 +73,6 @@ export function Header() {
                   {link.label}
                 </a>
               ))}
-              <a 
-                href="mailto:info@azorb.co"
-                className="w-full text-center py-3 mt-4 bg-brand text-white rounded-full font-bold shadow-sm"
-                onClick={closeMenu}
-              >
-                Contact (info@azorb.co)
-              </a>
             </nav>
           </div>
         )}
