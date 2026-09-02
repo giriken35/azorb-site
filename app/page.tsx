@@ -181,7 +181,10 @@ export default function Page() {
         
         {/* Technologies */}
         <section className="rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
-          <h2 className="mb-10 text-3xl font-extrabold tracking-tight text-foreground">Powered by</h2>
+          <div className="mb-10">
+            <h2 className="text-3xl font-extrabold tracking-tight text-foreground">Powered by</h2>
+            <p className="mt-2 text-sm text-muted-foreground font-medium">プロダクトを支える採用テクノロジー</p>
+          </div>
           <div className="space-y-8">
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
@@ -218,7 +221,10 @@ export default function Page() {
 
         {/* About */}
         <section className="rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm">
-          <h2 className="mb-10 text-3xl font-extrabold tracking-tight text-foreground">About Studio</h2>
+          <div className="mb-10">
+            <h2 className="text-3xl font-extrabold tracking-tight text-foreground">About Studio</h2>
+            <p className="mt-2 text-sm text-muted-foreground font-medium">スタジオ概要と基本情報</p>
+          </div>
           <div className="space-y-6 text-muted-foreground text-sm sm:text-base leading-loose">
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">屋号 / Brand</strong>
