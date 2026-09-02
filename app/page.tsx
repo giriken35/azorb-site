@@ -211,7 +211,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Cursor', 'Claude', 'ChatGPT', 'Gemini', 'Gemini Notebook', 'Google Antigravity'].map((skill) => (
+                {['Cursor', 'ChatGPT', 'Gemini', 'Gemini Notebook', 'Google Antigravity'].map((skill) => (
                   <li key={skill} className="rounded-full border border-brand/30 bg-brand/5 px-5 py-2 text-sm font-bold text-brand shadow-sm">
                     {skill}
                   </li>
@@ -239,6 +239,9 @@ export default function Page() {
               </ul>
             </div>
           </div>
+          <p className="mt-8 text-xs text-muted-foreground/80 border-t border-border/50 pt-4">
+            ※ 上記のLanguage / Frameworkおよび各種インフラ構築には、積極的にAI・AIエージェントの支援を用いて実装を行っています。
+          </p>
         </section>
 
         {/* About */}
