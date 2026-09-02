@@ -152,8 +152,12 @@ export default function Page() {
 
           {/* Product 5: Local News Aggregator */}
           <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-blue-500/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-blue-500/20 to-sky-500/20 flex items-center justify-center">
-              <Newspaper className="h-16 w-16 text-blue-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/local-news-screenshot.png" 
+                alt="自分専用 広告なし地元ニュースサイト" 
+                className="w-full h-full object-cover object-top rounded-xl transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
