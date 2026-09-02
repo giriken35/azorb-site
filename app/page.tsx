@@ -90,24 +90,24 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Product 3: Next.js Boilerplate */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
-            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-emerald-500/20 to-teal-500/20 flex items-center justify-center">
-              <Layout className="h-16 w-16 text-emerald-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
+          {/* Product 3: Auto Capture & Translation Tool */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-all duration-300 hover:border-fuchsia-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-gradient-to-br from-fuchsia-500/20 to-purple-500/20 flex items-center justify-center">
+              <Code2 className="h-16 w-16 text-fuchsia-500 opacity-80 group-hover:scale-110 transition-transform duration-500" />
             </div>
             <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">Next.js Template</span>
-                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">開発中</span>
+                <span className="rounded-md bg-fuchsia-500/10 px-2 py-1 text-xs font-semibold text-fuchsia-600">Desktop App</span>
+                <span className="rounded-md bg-fuchsia-500/10 px-2 py-1 text-xs font-semibold text-fuchsia-600">AI / Python</span>
               </div>
-              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">SaaS向けモダンUIボイラープレート</h3>
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">万能オートキャプチャ＆AI抽出・翻訳</h3>
               <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
-                洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
+                連続スクリーンショットから、AI（Gemini等）を用いてテキストを自動抽出・翻訳し、人間用のツリー構造（マインドマップ）で整理するデスクトップツールです。
               </p>
               <div className="mt-auto">
-                <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
-                  Coming Soon
-                </button>
+                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-fuchsia-500/10 px-4 py-3 text-sm font-bold text-fuchsia-600 transition-colors hover:bg-fuchsia-500 hover:text-white">
+                  ツールを利用する
+                </a>
               </div>
             </div>
           </div>
@@ -195,6 +195,10 @@ export default function Page() {
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">事業内容</strong>
               <span className="text-right">自社Webサービスの企画・開発・運営<br/>ニッチ領域向け自動化ツールの提供</span>
+            </div>
+            <div className="flex justify-between border-b border-border/70 pb-5">
+              <strong className="text-foreground font-bold min-w-32 tracking-tight">所在地</strong>
+              <span className="text-right">〒150-0043<br/>東京都渋谷区道玄坂1丁目10番8号<br/>渋谷道玄坂東急ビル2F−C</span>
             </div>
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">お問い合わせ</strong>
