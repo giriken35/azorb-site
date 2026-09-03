@@ -8,7 +8,7 @@ export const metadata = {
 export default function LegalPage() {
   return (
     <div className="min-h-screen bg-background py-16 px-4 sm:px-6">
-      <div className="mx-auto max-w-3xl">
+      <div className="mx-auto max-w-5xl">
         <Link href="/" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground mb-8 transition-colors">
           <ArrowLeft className="mr-2 h-4 w-4" />
           トップページへ戻る
@@ -17,7 +17,7 @@ export default function LegalPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-8">特定商取引法に基づく表記</h1>
           
           <div className="overflow-hidden rounded-xl border border-border">
-            <table className="w-full text-sm text-left">
+            <table className="w-full text-base text-left">
               <tbody className="divide-y divide-border">
                 <tr>
                   <th className="py-4 px-6 bg-muted/50 font-medium text-foreground w-1/3 border-r border-border">
