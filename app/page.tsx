@@ -282,7 +282,7 @@ export default function Page() {
             </div>
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">お問い合わせ</strong>
-              <a href="https://template-lp-eight.vercel.app/contact" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
+              <a href="/contact" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
                 お問い合わせフォーム
               </a>
             </div>
@@ -312,7 +312,7 @@ export default function Page() {
           <Link href="/terms" className="hover:text-brand transition-colors">利用規約</Link>
           <Link href="/privacy" className="hover:text-brand transition-colors">プライバシーポリシー</Link>
           <Link href="/legal" className="hover:text-brand transition-colors">特定商取引法に基づく表記</Link>
-          <Link href="https://template-lp-eight.vercel.app/contact" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">お問い合わせ</Link>
+          <Link href="/contact" className="hover:text-brand transition-colors">お問い合わせ</Link>
         </div>
         <p className="font-medium tracking-wide">&copy; {new Date().getFullYear()} Azorb. All rights reserved.</p>
         <p className="mt-3 text-xs opacity-60 tracking-wider">Built with Next.js & Tailwind CSS</p>
