@@ -11,7 +11,7 @@ export default function LegalPage() {
       <div className="mx-auto max-w-5xl">
         <Link href="/" className="inline-flex items-center text-sm font-medium text-muted-foreground hover:text-foreground mb-8 transition-colors">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          トップページへ戻る
+          Azorb トップへ
         </Link>
         <div className="rounded-2xl border border-border bg-card p-8 sm:p-12 shadow-sm">
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-8">特定商取引法に基づく表記</h1>
