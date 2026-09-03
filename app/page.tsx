@@ -282,8 +282,8 @@ export default function Page() {
             </div>
             <div className="flex justify-between border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold min-w-32 tracking-tight">お問い合わせ</strong>
-              <a href="mailto:info@azorb.co" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
-                info@azorb.co
+              <a href="https://template-lp-eight.vercel.app/contact" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
+                お問い合わせフォーム
               </a>
             </div>
             <div className="pt-4 space-y-4">
@@ -300,7 +300,7 @@ export default function Page() {
                 基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
               </p>
               <p className="text-sm border-t border-border/70 pt-4 mt-4">
-                ※ ツールに関する取材、サービス買収、および開発のご相談については、上記メールアドレスよりお問い合わせください。
+                ※ ツールに関する取材、サービス買収、および開発のご相談については、上記のお問い合わせフォームよりお問い合わせください。
               </p>
             </div>
           </div>
@@ -312,7 +312,7 @@ export default function Page() {
           <Link href="/terms" className="hover:text-brand transition-colors">利用規約</Link>
           <Link href="/privacy" className="hover:text-brand transition-colors">プライバシーポリシー</Link>
           <Link href="/legal" className="hover:text-brand transition-colors">特定商取引法に基づく表記</Link>
-          <Link href="/#contact" className="hover:text-brand transition-colors">お問い合わせ</Link>
+          <Link href="https://template-lp-eight.vercel.app/contact" target="_blank" rel="noopener noreferrer" className="hover:text-brand transition-colors">お問い合わせ</Link>
         </div>
         <p className="font-medium tracking-wide">&copy; {new Date().getFullYear()} Azorb. All rights reserved.</p>
         <p className="mt-3 text-xs opacity-60 tracking-wider">Built with Next.js & Tailwind CSS</p>
