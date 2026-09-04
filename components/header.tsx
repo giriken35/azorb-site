@@ -12,36 +12,6 @@ export function Header() {
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
   const closeMenu = () => setIsMobileMenuOpen(false)
 
-  const hasFiredReload = useRef(false)
-  const toastTextRef = useRef(t.header.toast)
-  
-  // Keep the ref updated with the latest translation (handles hydration from Japanese to English)
-  useEffect(() => {
-    toastTextRef.current = t.header.toast
-  }, [t.header.toast])
-
-  useEffect(() => {
-    if (hasFiredReload.current) return;
-
-    const isReload = (window.performance?.navigation?.type === 1) || 
-                     (window.performance?.getEntriesByType("navigation")[0] as any)?.type === "reload";
-
-    if (isReload) {
-      hasFiredReload.current = true;
-      
-      // Wait 300ms to allow LanguageProvider to read localStorage and update toastTextRef
-      setTimeout(() => {
-        import("sonner").then(({ toast }) => {
-          toast.success(toastTextRef.current, {
-            position: "top-center",
-            duration: 2000,
-            style: { padding: "8px 24px", minHeight: "36px", fontSize: "14px", borderRadius: "100px", width: "max-content", margin: "0 auto", left: 0, right: 0 }
-          })
-        })
-      }, 300)
-    }
-  }, [])
-
 
   const navLinks = [
     { href: "#products", label: t.header.products },
