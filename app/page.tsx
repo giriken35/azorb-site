@@ -292,22 +292,37 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className="pt-4 space-y-4">
-              <p>
-                「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、自社Webサービスや自動化ツールの開発に注力する独立系プロダクトスタジオです。
-              </p>
-              <div className="rounded-xl bg-brand/5 border border-brand/10 p-5 my-4">
-                <p className="text-sm font-bold text-brand mb-2">
-                  "A to Z" × "Orbit (軌道)" = Azorb <span className="text-xs font-medium opacity-70">（アゾーブ）</span>
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  一度組み上げたコードが狂いなく走り続け、自律的に価値を生み出す。天体が軌道を描くような「無人で規則正しく回り続ける美しいエコシステム（自動化・SaaS）」の設計をスタジオの理念としています。
+            <div className="pt-8 space-y-8">
+              {/* Brand Identity */}
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand mb-3">Brand Identity</span>
+                <div className="rounded-xl bg-brand/5 border border-brand/10 p-5">
+                  <p className="text-sm font-bold text-brand mb-2">
+                    "A to Z" × "Orbit (軌道)" = Azorb <span className="text-xs font-medium opacity-70">（アゾーブ）</span>
+                  </p>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    一度組み上げたコードが狂いなく走り続け、自律的に価値を生み出す。天体が軌道を描くような「無人で規則正しく回り続ける美しいエコシステム（自動化・SaaS）」の設計をスタジオの理念としています。
+                  </p>
+                </div>
+              </div>
+
+              {/* Concept */}
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">Concept</span>
+                <p className="leading-relaxed">
+                  「大手がやらない、でも誰かが確実に欲しがっているもの」をコンセプトに、マイクロSaaSやAI・自動化アプリケーションの開発に注力する独立系プロダクトスタジオです。
                 </p>
               </div>
-              <p>
-                基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
-              </p>
-              <p className="text-sm border-t border-border/70 pt-4 mt-4">
+
+              {/* Client Works */}
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">Client Works</span>
+                <p className="leading-relaxed">
+                  基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
+                </p>
+              </div>
+
+              <p className="text-sm border-t border-border/70 pt-6 mt-8">
                 ※ ツールに関する取材、サービス買収、および開発のご相談については、上記のお問い合わせフォームよりお問い合わせください。
               </p>
             </div>
