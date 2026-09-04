@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -16,9 +16,9 @@ export default function ContactPage() {
     setIsSubmitting(true);
   };
 
-  const inputClass = "w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-all shadow-sm";
+  const inputClass = "w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground/40 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-all shadow-sm";
   const radioGroupClass = "space-y-1.5 p-1";
-  const dynamicInputClass = "w-full bg-muted border border-border rounded-lg px-3 py-2 text-sm text-foreground focus:bg-background focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand mt-2 transition-all shadow-sm";
+  const dynamicInputClass = "w-full bg-muted border border-border rounded-lg px-3 py-2 text-sm text-foreground placeholder-muted-foreground/40 focus:bg-background focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand mt-2 transition-all shadow-sm";
 
   return (
     <div className="min-h-screen bg-background py-16 px-4 sm:px-6">
@@ -49,7 +49,7 @@ export default function ContactPage() {
                 type="text" 
                 name="company" 
                 className={inputClass}
-                placeholder="株式会社Azorb"
+                placeholder="例：株式会社Azorb"
               />
             </div>
 
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 name="name" 
                 required
                 className={inputClass}
-                placeholder="山田 太郎"
+                placeholder="例：山田 太郎"
               />
             </div>
 
@@ -75,7 +75,7 @@ export default function ContactPage() {
                 name="email" 
                 required
                 className={inputClass}
-                placeholder="info@azorb.co"
+                placeholder="例：info@azorb.co"
               />
             </div>
 
@@ -232,7 +232,7 @@ export default function ContactPage() {
                 type="email" 
                 name="purchase_email" 
                 className={inputClass}
-                placeholder="購入時に使用したメールアドレス"
+                placeholder="例：info@azorb.co"
               />
             </div>
 
