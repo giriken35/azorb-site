@@ -1,18 +1,20 @@
-"use client"
+﻿"use client"
 
 import Link from "next/link"
-import { Code, Menu, X } from "lucide-react"
+import { Code, Menu, X, Globe } from "lucide-react"
 import { useState } from "react"
+import { useLanguage } from "@/lib/i18n-context"
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { lang, t, toggleLanguage } = useLanguage()
 
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen)
   const closeMenu = () => setIsMobileMenuOpen(false)
 
   const navLinks = [
-    { href: "#products", label: "Products" },
-    { href: "#focus", label: "Focus Areas" },
+    { href: "#products", label: t.header.products },
+    { href: "#focus", label: t.header.focus },
   ]
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -36,7 +38,7 @@ export function Header() {
             closeMenu()
             
             import("sonner").then(({ toast }) => {
-              toast.success("ページを更新しました", {
+              toast.success(t.header.toast, {
                 position: "top-center",
                 duration: 2000,
                 style: { padding: "8px 24px", minHeight: "36px", fontSize: "14px", borderRadius: "100px", width: "max-content", margin: "0 auto", left: 0, right: 0 }
@@ -68,18 +70,41 @@ export function Header() {
           ))}
         </nav>
         
-        <div className="hidden md:flex items-center">
-            {/* Removed active contact button, keeping it clean for product-led studio */}
+        <div className="hidden md:flex items-center z-50">
+          {/* Language Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-2 rounded-full border border-border/50 bg-surface/50 px-3 py-1.5 text-xs font-bold text-muted-foreground transition-all hover:bg-surface hover:text-foreground active:scale-95"
+            aria-label="Toggle language"
+          >
+            <Globe className="h-3.5 w-3.5" />
+            <span className={lang === 'ja' ? 'text-foreground' : ''}>JA</span>
+            <span className="opacity-30">/</span>
+            <span className={lang === 'en' ? 'text-foreground' : ''}>EN</span>
+          </button>
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button 
-          className="md:hidden flex items-center justify-center p-2 -mr-2 text-foreground z-50 transition-transform active:scale-95"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        <div className="flex md:hidden items-center gap-4 z-50">
+          {/* Mobile Language Toggle */}
+          <button
+            onClick={toggleLanguage}
+            className="flex items-center gap-1.5 rounded-full border border-border/50 bg-surface/50 px-2.5 py-1 text-[10px] font-bold text-muted-foreground transition-all active:scale-95"
+          >
+            <Globe className="h-3 w-3" />
+            <span className={lang === 'ja' ? 'text-foreground' : ''}>JA</span>
+            <span className="opacity-30">/</span>
+            <span className={lang === 'en' ? 'text-foreground' : ''}>EN</span>
+          </button>
+
+          <button 
+            className="flex items-center justify-center p-2 -mr-2 text-foreground transition-transform active:scale-95"
+            onClick={toggleMenu}
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
