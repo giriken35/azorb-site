@@ -65,9 +65,9 @@ export default function Page() {
                 洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
               </p>
               <div className="mt-auto">
-                <button disabled className="inline-flex items-center justify-center w-full rounded-xl bg-muted px-4 py-3 text-sm font-bold text-muted-foreground cursor-not-allowed">
+                <a href="https://template-lp-eight.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-600 transition-colors hover:bg-emerald-500 hover:text-white">
                   Coming Soon
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function Page() {
                 「地元のニュースを読みたいが、広告だらけで読みづらい」という不満から自作した専用アグリゲーター。Pythonで定期的に記事をスクレイピング・要約し、Next.jsの快適なUIで配信しています。
               </p>
               <div className="mt-auto">
-                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-blue-500/10 px-4 py-3 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-500 hover:text-white">
+                <a href="https://miyagi-sendai-news.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-blue-500/10 px-4 py-3 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-500 hover:text-white">
                   サイトを見る
                 </a>
               </div>
@@ -168,8 +168,8 @@ export default function Page() {
                 自分の残された人生の時間をリアルタイムで刻み続ける、少しシュールで刺激的なタイマーアプリ。遊び心の中に「今日という1日の大切さ」を再認識させるユーモアを込めています。
               </p>
               <div className="mt-auto">
-                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
-                  アプリを見る
+                <a href="https://life-countdown-timer-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
+                  サイトを見る
                 </a>
               </div>
             </div>
