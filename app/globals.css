@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+﻿@import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 
@@ -78,9 +78,7 @@
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
+  html { }
   * {
     @apply border-border outline-ring/50;
   }

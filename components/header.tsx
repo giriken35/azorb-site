@@ -15,6 +15,17 @@ export function Header() {
     { href: "#focus", label: "Focus Areas" },
   ]
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault()
+    closeMenu()
+    const targetId = href.replace("#", "")
+    const targetElement = document.getElementById(targetId)
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" })
+      window.history.pushState("", document.title, href)
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="relative mx-auto flex h-16 sm:h-20 max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -47,7 +58,12 @@ export function Header() {
         {/* Desktop Navigation (Centered) */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 text-base sm:text-lg font-medium text-muted-foreground">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-foreground transition-colors font-bold tracking-wide">
+            <a 
+              key={link.href} 
+              href={link.href} 
+              className="hover:text-foreground transition-colors font-bold tracking-wide"
+              onClick={(e) => handleNavClick(e, link.href)}
+            >
               {link.label}
             </a>
           ))}
@@ -75,7 +91,7 @@ export function Header() {
                   key={link.href} 
                   href={link.href} 
                   className="w-full text-center py-3 border-b border-border/50 text-foreground hover:text-brand transition-colors"
-                  onClick={closeMenu}
+                  onClick={(e) => handleNavClick(e, link.href)}
                 >
                   {link.label}
                 </a>
