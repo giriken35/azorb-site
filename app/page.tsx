@@ -6,7 +6,6 @@ import { useLanguage } from "@/lib/i18n-context"
 
 export default function Page() {
   const { t } = useLanguage()
-
   return (
     <main className="mx-auto min-h-screen w-full max-w-[1500px] px-4 py-8 sm:px-6 lg:px-8">
       
@@ -15,15 +14,18 @@ export default function Page() {
         <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-brand/25 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 left-1/3 h-56 w-56 rounded-full bg-brand-2/15 blur-3xl" />
 
-        <div className="relative z-10 flex flex-col items-center justify-center pt-8 pb-4">
-          <div className="mb-4 inline-flex items-center rounded-full border border-brand/30 bg-brand/10 px-4 py-1.5 text-xs font-bold text-brand uppercase tracking-widest">
-            <Sparkles className="mr-2 h-3.5 w-3.5" />
+        <div className="relative z-10 flex flex-col items-center">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-brand/50 bg-brand/10 px-4 py-2 text-sm font-bold text-brand shadow-[0_0_15px_-3px_rgba(108,99,255,0.3)] backdrop-blur">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
+            </span>
             {t.hero.badge}
           </div>
-          
-          <div className="text-sm font-bold tracking-[0.2em] text-muted-foreground mb-1">{t.hero.furigana}</div>
-          <h1 className="mb-6 max-w-4xl text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl leading-[1.15]">
-            <span className="bg-gradient-to-r from-brand-2 to-brand bg-clip-text text-transparent uppercase tracking-widest">Azorb</span><br className="mb-4" />
+
+          <h1 className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance leading-tight">
+            <span className="block text-sm sm:text-base font-bold text-muted-foreground/80 tracking-[0.2em] mb-1">{t.hero.furigana}</span>
+            <span className="text-gradient block mb-3">{t.about.v1}</span>
             {t.hero.title1}<br className="hidden sm:block" />{t.hero.title2}
           </h1>
 
@@ -36,28 +38,26 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Products Showcase */}
-      <section id="products" className="mb-24 scroll-mt-24 rounded-3xl border border-border bg-surface/50 p-8 sm:p-12 shadow-sm relative overflow-hidden">
-        <div className="absolute top-0 right-0 -mr-20 -mt-20 h-64 w-64 rounded-full bg-brand/5 blur-3xl pointer-events-none" />
-        
-        <div className="mb-12">
-          <h2 className="text-3xl font-extrabold tracking-tight text-foreground">{t.products.title}</h2>
-          <p className="mt-2 text-sm text-muted-foreground font-medium">{t.products.subtitle}</p>
+      {/* Products Section */}
+      <section id="products" className="mb-24 scroll-mt-24 rounded-3xl border border-border bg-card/40 p-6 sm:p-12 backdrop-blur-sm shadow-sm">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">{t.products.title}</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">{t.products.subtitle}</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          
-          {/* Product 1: Boilerplate */}
-          <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/30">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            <div className="relative z-10 flex h-full flex-col">
-              <div className="mb-6 flex items-center justify-between">
-                <div className="rounded-xl bg-surface p-3 shadow-sm border border-border/50">
-                  <Layout className="h-6 w-6 text-emerald-500" />
-                </div>
-              </div>
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Product 4: Next.js Boilerplate */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-300 hover:duration-100 ease-out hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/saas-boilerplate-mockup.jpg" 
+                alt="{t.products.p1.t}" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:duration-100 ease-out group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-surface px-2 py-1 text-xs font-semibold text-muted-foreground border border-border">{t.products.p1.b1}</span>
+                <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">{t.products.p1.b1}</span>
                 <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">{t.products.p1.b2}</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">{t.products.p1.t}</h3>
@@ -72,17 +72,18 @@ export default function Page() {
             </div>
           </div>
 
-          {/* Product 2: Address Formatter */}
-          <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/30">
-            <div className="absolute inset-0 bg-gradient-to-br from-brand/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            <div className="relative z-10 flex h-full flex-col">
-              <div className="mb-6 flex items-center justify-between">
-                <div className="rounded-xl bg-surface p-3 shadow-sm border border-border/50">
-                  <Map className="h-6 w-6 text-brand" />
-                </div>
-              </div>
+          {/* Product 1: Address Tool */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-300 hover:duration-100 ease-out hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/address-tool-screenshot.png" 
+                alt="{t.products.p2.t}" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:duration-100 ease-out group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-surface px-2 py-1 text-xs font-semibold text-muted-foreground border border-border">{t.products.p2.b1}</span>
+                <span className="rounded-md bg-brand/10 px-2 py-1 text-xs font-semibold text-brand">{t.products.p2.b1}</span>
                 <span className="rounded-md bg-brand/10 px-2 py-1 text-xs font-semibold text-brand">{t.products.p2.b2}</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">{t.products.p2.t}</h3>
@@ -90,24 +91,25 @@ export default function Page() {
                 {t.products.p2.d}
               </p>
               <div className="mt-auto">
-                <a href="https://address-formatter-phi.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-brand/10 px-4 py-3 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white">
+                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-brand/10 px-4 py-3 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-white">
                   {t.products.p2.cta}
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Product 3: Auto Capture AI */}
-          <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/30">
-            <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-            <div className="relative z-10 flex h-full flex-col">
-              <div className="mb-6 flex items-center justify-between">
-                <div className="rounded-xl bg-surface p-3 shadow-sm border border-border/50">
-                  <CheckCircle2 className="h-6 w-6 text-fuchsia-500" />
-                </div>
-              </div>
+          {/* Product 3: Auto Capture & Translation Tool */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-300 hover:duration-100 ease-out hover:border-fuchsia-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/auto-capture-screenshot.png" 
+                alt="{t.products.p3.t}" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:duration-100 ease-out group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-surface px-2 py-1 text-xs font-semibold text-muted-foreground border border-border">{t.products.p3.b1}</span>
+                <span className="rounded-md bg-fuchsia-500/10 px-2 py-1 text-xs font-semibold text-fuchsia-600">{t.products.p3.b1}</span>
                 <span className="rounded-md bg-fuchsia-500/10 px-2 py-1 text-xs font-semibold text-fuchsia-600">{t.products.p3.b2}</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">{t.products.p3.t}</h3>
@@ -115,52 +117,59 @@ export default function Page() {
                 {t.products.p3.d}
               </p>
               <div className="mt-auto">
-                <a href="https://auto-capture-ai.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-fuchsia-500/10 px-4 py-3 text-sm font-bold text-fuchsia-600 transition-colors hover:bg-fuchsia-500 hover:text-white">
-                  {t.products.p3.cta}
+                <a href="#" className="inline-flex items-center justify-center w-full rounded-xl bg-fuchsia-500/10 px-4 py-3 text-sm font-bold text-fuchsia-600 transition-colors hover:bg-fuchsia-500 hover:text-white">
+                  {t.products.p2.cta}
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Product 4: News Aggregator */}
-          <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/30 pb-6">
-            <div className="h-48 w-full bg-surface border-b border-border/50 p-4">
-              <img src="/p-news.png" alt="News Aggregator" className="w-full h-full object-cover rounded-xl shadow-sm border border-border/50 opacity-90" />
+          {/* Product 5: Local News Aggregator */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-300 hover:duration-100 ease-out hover:border-blue-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/local-news-screenshot.png" 
+                alt="{t.products.p4.t}" 
+                className="w-full h-full object-cover object-top rounded-xl transition-transform duration-300 group-hover:duration-100 ease-out group-hover:scale-105"
+              />
             </div>
-            <div className="relative z-10 flex h-full flex-col px-6 mt-4">
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-[10px] font-bold text-blue-600 uppercase tracking-wider">{t.products.p4.b1}</span>
-                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-[10px] font-bold text-blue-600 uppercase tracking-wider">{t.products.p4.b2}</span>
+                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-600">{t.products.p4.b1}</span>
+                <span className="rounded-md bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-600">{t.products.p4.b2}</span>
               </div>
-              <h3 className="mb-3 text-lg font-bold tracking-tight text-foreground leading-snug">{t.products.p4.t}</h3>
-              <p className="mb-6 text-sm text-foreground/80 flex-1 leading-relaxed">
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">{t.products.p4.t}</h3>
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 {t.products.p4.d}
               </p>
               <div className="mt-auto">
-                <a href="https://sendai-news.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-blue-500/10 px-4 py-2.5 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-500 hover:text-white">
+                <a href="https://miyagi-sendai-news.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-blue-500/10 px-4 py-3 text-sm font-bold text-blue-600 transition-colors hover:bg-blue-500 hover:text-white">
                   {t.products.p4.cta}
                 </a>
               </div>
             </div>
           </div>
-
-          {/* Product 5: Countdown Timer */}
-          <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-0 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-brand/30 pb-6">
-            <div className="h-48 w-full bg-surface border-b border-border/50 p-4">
-              <img src="/p-timer.png" alt="Countdown Timer" className="w-full h-full object-cover rounded-xl shadow-sm border border-border/50 opacity-90" />
+          {/* Product 2: Lifespan Timer */}
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-300 hover:duration-100 ease-out hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
+              <img 
+                src="/lifespan-timer-screenshot.png" 
+                alt="{t.products.p5.t}" 
+                className="w-full h-full object-cover rounded-xl transition-transform duration-300 group-hover:duration-100 ease-out group-hover:scale-105"
+              />
             </div>
-            <div className="relative z-10 flex h-full flex-col px-6 mt-4">
+            <div className="flex flex-1 flex-col p-6 sm:p-8">
               <div className="mb-4 flex flex-wrap gap-2">
-                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-[10px] font-bold text-orange-600 uppercase tracking-wider">{t.products.p5.b1}</span>
-                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-[10px] font-bold text-orange-600 uppercase tracking-wider">{t.products.p5.b2}</span>
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">{t.products.p5.b1}</span>
+                <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">{t.products.p5.b2}</span>
               </div>
-              <h3 className="mb-3 text-lg font-bold tracking-tight text-foreground leading-snug">{t.products.p5.t}</h3>
-              <p className="mb-6 text-sm text-foreground/80 flex-1 leading-relaxed">
+              <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">{t.products.p5.t}</h3>
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 {t.products.p5.d}
               </p>
               <div className="mt-auto">
-                <a href="https://lifespan-countdown.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-2.5 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
-                  {t.products.p5.cta}
+                <a href="https://life-countdown-timer-web.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full rounded-xl bg-orange-500/10 px-4 py-3 text-sm font-bold text-orange-600 transition-colors hover:bg-orange-500 hover:text-white">
+                  {t.products.p4.cta}
                 </a>
               </div>
             </div>
@@ -169,38 +178,40 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Focus Areas */}
-      <section id="focus" className="scroll-mt-24 rounded-3xl p-8 sm:p-12 mb-16 text-center max-w-5xl mx-auto">
-        <div className="mb-12">
-          <h2 className="text-3xl font-extrabold tracking-tight text-foreground">{t.focus.title}</h2>
-          <p className="mt-2 text-sm text-muted-foreground font-medium">{t.focus.subtitle}</p>
+      {/* Focus Areas Section */}
+      <section id="focus" className="mb-24 scroll-mt-24">
+        <div className="mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-foreground">{t.focus.title}</h2>
+          <p className="mt-4 text-muted-foreground leading-relaxed">{t.products.subtitle}</p>
         </div>
-        
-        <div className="grid gap-6 md:grid-cols-3 text-left">
-          <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow hover:border-brand/30">
-            <div className="mb-4 inline-flex rounded-full bg-brand/10 p-3">
-              <CheckCircle2 className="h-5 w-5 text-brand" />
+
+        <div className="grid gap-6 sm:grid-cols-3">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:duration-100 ease-out hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
+              <CheckCircle2 className="h-6 w-6" />
             </div>
-            <h3 className="mb-3 font-bold text-foreground">{t.focus.f1.t}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">{t.focus.f1.t}</h3>
+            <p className="text-muted-foreground text-sm sm:text-base leading-loose">
               {t.focus.f1.d}
             </p>
           </div>
-          <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow hover:border-brand/30">
-            <div className="mb-4 inline-flex rounded-full bg-emerald-500/10 p-3">
-              <Code2 className="h-5 w-5 text-emerald-600" />
+
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:duration-100 ease-out hover:border-brand-2/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-2/10 text-brand-2">
+              <Code2 className="h-6 w-6" />
             </div>
-            <h3 className="mb-3 font-bold text-foreground">{t.focus.f2.t}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">{t.focus.f2.t}</h3>
+            <p className="text-muted-foreground text-sm sm:text-base leading-loose">
               {t.focus.f2.d}
             </p>
           </div>
-          <div className="rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow hover:border-brand/30">
-            <div className="mb-4 inline-flex rounded-full bg-orange-500/10 p-3">
-              <Sparkles className="h-5 w-5 text-orange-500" />
+
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-300 hover:duration-100 ease-out hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
+            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500">
+              <Sparkles className="h-6 w-6" />
             </div>
-            <h3 className="mb-3 font-bold text-foreground">{t.focus.f3.t}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <h3 className="mb-4 text-lg sm:text-xl font-bold tracking-tight text-foreground">{t.focus.f3.t}</h3>
+            <p className="text-muted-foreground text-sm sm:text-base leading-loose">
               {t.focus.f3.d}
             </p>
           </div>
@@ -215,7 +226,7 @@ export default function Page() {
           </div>
           <div className="space-y-8">
             <div>
-              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">{t.poweredBy.c1}</h4>
+              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
               <ul className="flex flex-wrap gap-2.5">
                 {['Cursor', 'ChatGPT', 'Gemini', 'Google Antigravity'].map((skill) => (
                   <li key={skill} className="rounded-full border border-brand/30 bg-brand/5 px-5 py-2 text-sm font-bold text-brand shadow-sm">
@@ -225,7 +236,7 @@ export default function Page() {
               </ul>
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">{t.poweredBy.c2}</h4>
+              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Language / Framework</h4>
               <ul className="flex flex-wrap gap-2.5">
                 {['Python', 'TypeScript', 'Next.js', 'FastAPI', 'Tailwind CSS'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
@@ -235,7 +246,7 @@ export default function Page() {
               </ul>
             </div>
             <div>
-              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">{t.poweredBy.c3}</h4>
+              <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Infrastructure / BaaS</h4>
               <ul className="flex flex-wrap gap-2.5">
                 {['Vercel', 'Supabase', 'Upstash', 'Cloudflare', 'Stripe', 'Brevo', 'Render'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
@@ -263,7 +274,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">{t.about.l2}</strong>
-              <div className="flex-1 text-foreground/90 leading-relaxed whitespace-pre-line">
+              <div className="flex-1 text-foreground/90 leading-relaxed">
                 {t.about.v2_1}<br/>
                 {t.about.v2_2}<br/>
                 {t.about.v2_3}
@@ -271,7 +282,8 @@ export default function Page() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">{t.about.l3}</strong>
-              <div className="flex-1 text-foreground/90 leading-relaxed whitespace-pre-line">{t.about.v3}</div>
+              <div className="flex-1 text-foreground/90 leading-relaxed">{t.about.v3.split('
+').map((line, i) => <span key={i}>{line}<br/></span>)}</div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">{t.about.l4}</strong>
@@ -282,12 +294,12 @@ export default function Page() {
               </div>
             </div>
             <div className="pt-8 space-y-8">
-              {/* Brand Identity */}
+              {/* {t.about.b_title} */}
               <div>
                 <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand mb-3">{t.about.b_title}</span>
                 <div className="rounded-xl bg-brand/5 border border-brand/10 p-5">
                   <p className="text-sm font-bold text-brand mb-2">
-                    {t.about.b_v1} <span className="text-xs font-medium opacity-70">{t.about.b_v2}</span>
+                    {t.about.b_v1} <span className="text-xs font-medium opacity-70">（{t.hero.furigana}）</span>
                   </p>
                   <p className="text-sm leading-relaxed">
                     {t.about.b_v3}
@@ -303,7 +315,7 @@ export default function Page() {
                 </p>
               </div>
 
-              {/* Client Works */}
+              {/* {t.about.cw_title} */}
               <div>
                 <span className="inline-block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">{t.about.cw_title}</span>
                 <p className="leading-relaxed">
@@ -311,9 +323,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <p className="text-sm text-muted-foreground border-t border-border/70 pt-6 mt-8">
-                {t.about.note}
-              </p>
+              <p className="text-sm text-muted-foreground border-t border-border/70 pt-6 mt-8">{t.about.note}</p>
             </div>
           </div>
         </section>
@@ -324,7 +334,7 @@ export default function Page() {
           <Link href="/terms" className="hover:text-brand transition-colors">{t.footer.terms}</Link>
           <Link href="/privacy" className="hover:text-brand transition-colors">{t.footer.privacy}</Link>
           <Link href="/legal" className="hover:text-brand transition-colors">{t.footer.legal}</Link>
-          <Link href="/contact" className="hover:text-brand transition-colors">{t.footer.contact}</Link>
+          <Link href="/contact" className="hover:text-brand transition-colors">{t.about.l4}</Link>
         </div>
         <p className="font-medium tracking-wide">&copy; {new Date().getFullYear()} Azorb. All rights reserved.</p>
         <p className="mt-3 text-xs opacity-60 tracking-wider">{t.footer.built}</p>
