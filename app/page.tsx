@@ -318,7 +318,7 @@ export default function Page() {
               <div>
                 <span className="inline-block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2">Client Works</span>
                 <p className="leading-relaxed">
-                  基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを自社にも構築してほしい」といった法人様からのご依頼に限り、少数精鋭の特別プロジェクトとしてお受けしております。
+                  基本的には自社プロダクトの開発を優先しておりますが、Azorbのデザイン哲学や技術スタックに共感し、「同様のモダンなシステムを作ってほしい」といったご依頼に限り、個人スタジオならではの機動力を活かした特別枠としてお受けしております。
                 </p>
               </div>
 
