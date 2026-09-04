@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Link from "next/link"
 import { Code, Menu, X } from "lucide-react"
@@ -29,9 +29,6 @@ export function Header() {
             }
           }}
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand to-brand-2 text-white shadow-sm">
-            <Code className="h-4 w-4" />
-          </div>
           <span className="text-sm font-bold tracking-tight text-foreground sm:text-base uppercase tracking-widest">
             Azorb
           </span>
