@@ -1,4 +1,4 @@
-﻿import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
+import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -25,7 +25,7 @@ export default function Page() {
             ニッチな課題に、<br className="hidden sm:block" />ピンポイントで効くツールを。
           </h1>
 
-          <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-loose">
+          <p className="max-w-2xl text-base sm:text-lg text-foreground/90 font-medium leading-relaxed">
             大手が手を出さない細かな業務のボトルネック解消から、<br className="hidden sm:block" />
             日常にクスッと笑いを提供するユーモア溢れるWebアプリまで。<br className="hidden sm:block" />
             個人開発ならではの身軽さと圧倒的なコストパフォーマンスで、<br className="hidden sm:block" />
