@@ -22,7 +22,6 @@ export function Header() {
     const targetElement = document.getElementById(targetId)
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" })
-      window.history.pushState("", document.title, href)
     }
   }
 
