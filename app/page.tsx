@@ -1,4 +1,4 @@
-import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
+﻿import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -267,7 +267,7 @@ export default function Page() {
             <h2 className="text-3xl font-extrabold tracking-tight text-foreground">About Studio</h2>
             <p className="mt-2 text-sm text-muted-foreground font-medium">スタジオ概要と基本情報</p>
           </div>
-          <div className="space-y-6 text-muted-foreground text-sm sm:text-base leading-loose">
+          <div className="space-y-6 text-foreground/90 text-sm sm:text-base leading-loose">
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">屋号 / Brand</strong>
               <div className="flex-1 text-foreground font-medium text-base">Azorb</div>
@@ -300,7 +300,7 @@ export default function Page() {
                   <p className="text-sm font-bold text-brand mb-2">
                     "A to Z" × "Orbit (軌道)" = Azorb <span className="text-xs font-medium opacity-70">（アゾーブ）</span>
                   </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-sm leading-relaxed">
                     一度組み上げたコードが狂いなく走り続け、自律的に価値を生み出す。天体が軌道を描くような「無人で規則正しく回り続ける美しいエコシステム（自動化・SaaS）」の設計をスタジオの理念としています。
                   </p>
                 </div>
@@ -322,7 +322,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <p className="text-sm border-t border-border/70 pt-6 mt-8">
+              <p className="text-sm text-muted-foreground border-t border-border/70 pt-6 mt-8">
                 ※ ツールに関する取材、サービス買収、および開発のご相談については、上記のお問い合わせフォームよりお問い合わせください。
               </p>
             </div>
