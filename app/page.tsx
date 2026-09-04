@@ -1,4 +1,4 @@
-import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
+﻿import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -31,11 +31,6 @@ export default function Page() {
             個人開発ならではの身軽さと圧倒的なコストパフォーマンスで、<br className="hidden sm:block" />
             「かゆいところに手が届く」プロダクトを展開しています。
           </p>
-
-          <a href="#products" className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-8 py-4 text-base font-bold text-white shadow-lg transition-all hover:bg-brand/90 hover:scale-105 active:scale-95">
-            提供中のプロダクトを見る
-            <ArrowDown className="h-5 w-5" />
-          </a>
         </div>
       </section>
 
