@@ -274,7 +274,11 @@ export default function Page() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">事業内容</strong>
-              <div className="flex-1 text-foreground/90 leading-relaxed">自社Webサービスの企画・開発・運営<br/>ニッチ領域向け自動化ツールの提供</div>
+              <div className="flex-1 text-foreground/90 leading-relaxed">
+                マイクロSaaSおよびAI・自動化アプリケーションの企画・開発<br/>
+                開発者向けアセット（UIテンプレート等）の提供<br/>
+                日常や業務の「隙間」を埋めるニッチプロダクトの運営
+              </div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">所在地</strong>
