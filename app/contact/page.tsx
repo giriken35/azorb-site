@@ -20,6 +20,11 @@ export default function ContactPage() {
     const form = e.currentTarget;
     const formData = new FormData(form);
     
+    const emailValue = formData.get("【3】メールアドレス");
+    if (emailValue) {
+      formData.append("_replyto", emailValue as string);
+    }
+    
     try {
       const response = await fetch("https://formspree.io/f/mbgjkyea", {
         method: 'POST',
@@ -91,7 +96,7 @@ export default function ContactPage() {
               </label>
               <input 
                 type="text" 
-                name="company" 
+                name="【1】会社名" 
                 className={inputClass}
                 placeholder="例：株式会社Azorb"
               />
@@ -103,7 +108,7 @@ export default function ContactPage() {
               </label>
               <input 
                 type="text" 
-                name="name" 
+                name="【2】お名前" 
                 required
                 className={inputClass}
                 placeholder="例：山田 太郎"
@@ -116,7 +121,7 @@ export default function ContactPage() {
               </label>
               <input 
                 type="email" 
-                name="email" 
+                name="【3】メールアドレス" 
                 required
                 className={inputClass}
                 placeholder="例：info@azorb.co"
@@ -139,7 +144,7 @@ export default function ContactPage() {
                   <label key={service} className="flex items-center space-x-3 p-2 rounded hover:bg-muted transition-colors cursor-pointer">
                     <input 
                       type="radio" 
-                      name="service" 
+                      name="【4】対象のサービス" 
                       value={service}
                       required
                       checked={selectedService === service}
@@ -154,7 +159,7 @@ export default function ContactPage() {
                   <div className="pl-9 pr-2 pb-2 pt-1 transition-all duration-200">
                     <input 
                       type="text" 
-                      name="service_other" 
+                      name="【4-2】対象のサービス（その他）" 
                       required
                       placeholder="サービス名をご記入ください"
                       className={dynamicInputClass}
@@ -179,7 +184,7 @@ export default function ContactPage() {
                   <label key={type} className="flex items-center space-x-3 p-2 rounded hover:bg-muted transition-colors cursor-pointer">
                     <input 
                       type="radio" 
-                      name="inquiry_type" 
+                      name="【5】お問い合わせ種別" 
                       value={type}
                       required
                       checked={selectedInquiryType === type}
@@ -194,7 +199,7 @@ export default function ContactPage() {
                   <div className="pl-9 pr-2 pb-2 pt-1 transition-all duration-200">
                     <input 
                       type="text" 
-                      name="inquiry_type_other" 
+                      name="【5-2】お問い合わせ種別（その他）" 
                       required
                       placeholder="お問い合わせ種別をご記入ください"
                       className={dynamicInputClass}
@@ -213,7 +218,7 @@ export default function ContactPage() {
                   <label key={env} className="flex items-center space-x-3 p-2 rounded hover:bg-muted transition-colors cursor-pointer">
                     <input 
                       type="radio" 
-                      name="os" 
+                      name="【6】ご利用の環境" 
                       value={env}
                       checked={selectedOs === env}
                       onChange={(e) => setSelectedOs(e.target.value)}
@@ -227,7 +232,7 @@ export default function ContactPage() {
                   <div className="pl-9 pr-2 pb-2 pt-1 transition-all duration-200">
                     <input 
                       type="text" 
-                      name="os_other"
+                      name="【6-2】ご利用の環境（その他）"
                       placeholder="ご利用のOS等をご記入ください"
                       className={dynamicInputClass}
                     />
@@ -245,7 +250,7 @@ export default function ContactPage() {
                   <label key={browser} className="flex items-center space-x-3 p-2 rounded hover:bg-muted transition-colors cursor-pointer">
                     <input 
                       type="radio" 
-                      name="browser" 
+                      name="【7】ご利用のブラウザ" 
                       value={browser}
                       checked={selectedBrowser === browser}
                       onChange={(e) => setSelectedBrowser(e.target.value)}
@@ -259,7 +264,7 @@ export default function ContactPage() {
                   <div className="pl-9 pr-2 pb-2 pt-1 transition-all duration-200">
                     <input 
                       type="text" 
-                      name="browser_other"
+                      name="【7-2】ご利用のブラウザ（その他）"
                       placeholder="ご利用のブラウザをご記入ください"
                       className={dynamicInputClass}
                     />
@@ -274,7 +279,7 @@ export default function ContactPage() {
               </label>
               <input 
                 type="email" 
-                name="purchase_email" 
+                name="【8】ご購入時のメールアドレス" 
                 className={inputClass}
                 placeholder="例：info@azorb.co"
               />
@@ -285,7 +290,7 @@ export default function ContactPage() {
                 9. 具体的なお問い合わせ内容 <span className="text-destructive ml-2 text-xs font-bold">【必須】</span>
               </label>
               <textarea 
-                name="message" 
+                name="【9】お問い合わせ内容" 
                 required
                 rows={6}
                 className={`${inputClass} resize-y`}
