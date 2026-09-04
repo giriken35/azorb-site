@@ -16,9 +16,7 @@ export default function Page() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-brand"></span>
             </span>
-            <span className="font-semibold">Independent Product Studio</span>
-            <span className="mx-2 text-brand/30">|</span>
-            <span className="text-xs font-medium opacity-80">独立系プロダクトスタジオ</span>
+            Independent Product Studio
           </div>
 
           <h1 className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance leading-tight">
