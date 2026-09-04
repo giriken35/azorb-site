@@ -282,8 +282,7 @@ export default function Page() {
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">{t.about.l3}</strong>
-              <div className="flex-1 text-foreground/90 leading-relaxed">{t.about.v3.split('
-').map((line, i) => <span key={i}>{line}<br/></span>)}</div>
+              <div className="flex-1 text-foreground/90 leading-relaxed">{t.about.v3.split('\n').map((line, i) => <span key={i}>{line}<br/></span>)}</div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">{t.about.l4}</strong>
@@ -299,7 +298,7 @@ export default function Page() {
                 <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand mb-3">{t.about.b_title}</span>
                 <div className="rounded-xl bg-brand/5 border border-brand/10 p-5">
                   <p className="text-sm font-bold text-brand mb-2">
-                    {t.about.b_v1} <span className="text-xs font-medium opacity-70">（{t.hero.furigana}）</span>
+                    {t.about.b_v1} <span className="text-xs font-medium opacity-70">({t.hero.furigana})</span>
                   </p>
                   <p className="text-sm leading-relaxed">
                     {t.about.b_v3}
