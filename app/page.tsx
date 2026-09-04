@@ -1,4 +1,4 @@
-﻿import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
+import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -20,6 +20,7 @@ export default function Page() {
           </div>
 
           <h1 className="mb-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-balance leading-tight">
+            <span className="block text-sm sm:text-base font-bold text-muted-foreground/80 tracking-[0.2em] mb-1">アゾーブ</span>
             <span className="text-gradient block mb-3">Azorb</span>
             ニッチな課題に、<br className="hidden sm:block" />ピンポイントで効くツールを。
           </h1>
