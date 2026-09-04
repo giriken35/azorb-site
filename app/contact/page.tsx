@@ -2,18 +2,43 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Send } from 'lucide-react';
+import { ArrowLeft, Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
   
   const [selectedService, setSelectedService] = useState("");
   const [selectedInquiryType, setSelectedInquiryType] = useState("");
   const [selectedOs, setSelectedOs] = useState("");
   const [selectedBrowser, setSelectedBrowser] = useState("");
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setIsSubmitting(true);
+    
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch("https://formspree.io/f/mbgjkyea", {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        setIsSuccess(true);
+      } else {
+        alert("送信に失敗しました。時間をおいて再度お試しください。");
+      }
+    } catch (error) {
+      alert("通信エラーが発生しました。ネットワークをご確認ください。");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const inputClass = "w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground/40 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-all shadow-sm";
@@ -30,10 +55,29 @@ export default function ContactPage() {
         </Link>
 
         <div className="rounded-2xl border border-border bg-card p-8 sm:p-12 shadow-sm">
-          <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">お問い合わせ</h1>
-          <p className="text-muted-foreground mb-10 pb-8 border-b border-border text-sm md:text-base">
-            Azorbの各種サービスについてのお問い合わせはこちらからお願いいたします。
-          </p>
+          {isSuccess ? (
+            <div className="flex flex-col items-center justify-center py-16 text-center animate-in fade-in zoom-in duration-500">
+              <div className="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle2 className="w-8 h-8 text-brand" />
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">送信が完了しました！</h1>
+              <p className="text-muted-foreground mb-8 max-w-md mx-auto">
+                お問い合わせいただき、ありがとうございます。<br />
+                内容を確認の上、担当者より通常3営業日以内にご連絡いたします。
+              </p>
+              <Link 
+                href="/"
+                className="inline-flex items-center justify-center bg-background border border-border hover:bg-muted text-foreground font-bold py-3 px-8 rounded-xl transition-all shadow-sm"
+              >
+                トップページへ戻る
+              </Link>
+            </div>
+          ) : (
+            <>
+              <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">お問い合わせ</h1>
+              <p className="text-muted-foreground mb-10 pb-8 border-b border-border text-sm md:text-base">
+                Azorbの各種サービスについてのお問い合わせはこちらからお願いいたします。
+              </p>
 
           <form 
             action="https://formspree.io/f/mbgjkyea" 
@@ -266,6 +310,8 @@ export default function ContactPage() {
               </button>
             </div>
           </form>
+          </>
+          )}
         </div>
       </div>
     </div>
