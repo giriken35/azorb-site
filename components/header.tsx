@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import Link from "next/link"
 import { Code, Menu, X } from "lucide-react"
@@ -17,19 +17,19 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
-      <div className="relative mx-auto flex h-14 max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-16 sm:h-20 max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
         <a 
           href="/" 
           className="group flex items-center gap-2.5 rounded-xl px-2 py-1.5 -ml-2 transition-all hover:bg-white/10 active:scale-95 z-50"
           onClick={closeMenu}
         >
-          <span className="text-sm font-bold tracking-tight text-foreground sm:text-base uppercase tracking-widest">
+          <span className="text-base font-bold tracking-tight text-foreground sm:text-2xl uppercase tracking-widest">
             Azorb
           </span>
         </a>
         
         {/* Desktop Navigation (Centered) */}
-        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium text-muted-foreground">
+        <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-12 text-base sm:text-lg font-medium text-muted-foreground">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="hover:text-foreground transition-colors font-bold tracking-wide">
               {link.label}
