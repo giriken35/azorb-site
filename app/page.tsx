@@ -47,7 +47,7 @@ export default function Page() {
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Product 4: Next.js Boilerplate */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-surface transition-all duration-150 ease-out hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-150 ease-out hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
               <img 
                 src="/saas-boilerplate-mockup.jpg" 
@@ -73,7 +73,7 @@ export default function Page() {
           </div>
 
           {/* Product 1: Address Tool */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-surface transition-all duration-150 ease-out hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-150 ease-out hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
               <img 
                 src="/address-tool-screenshot.png" 
@@ -99,7 +99,7 @@ export default function Page() {
           </div>
 
           {/* Product 3: Auto Capture & Translation Tool */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-surface transition-all duration-150 ease-out hover:border-fuchsia-500/50 hover:shadow-xl hover:-translate-y-1">
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-150 ease-out hover:border-fuchsia-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
               <img 
                 src="/auto-capture-screenshot.png" 
@@ -125,7 +125,7 @@ export default function Page() {
           </div>
 
           {/* Product 5: Local News Aggregator */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-surface transition-all duration-150 ease-out hover:border-blue-500/50 hover:shadow-xl hover:-translate-y-1">
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-150 ease-out hover:border-blue-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
               <img 
                 src="/local-news-screenshot.png" 
@@ -150,7 +150,7 @@ export default function Page() {
             </div>
           </div>
           {/* Product 2: Lifespan Timer */}
-          <div className="group flex flex-col overflow-hidden rounded-2xl border-2 border-border bg-surface transition-all duration-150 ease-out hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
+          <div className="group flex flex-col overflow-hidden rounded-2xl border-[3px] border-border bg-surface transition-all duration-150 ease-out hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="relative aspect-video w-full overflow-hidden bg-muted/30 border-b border-border/50 p-2">
               <img 
                 src="/lifespan-timer-screenshot.png" 
@@ -186,7 +186,7 @@ export default function Page() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-3">
-          <div className="group relative overflow-hidden rounded-2xl border-2 border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand/30">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
               <CheckCircle2 className="h-6 w-6" />
             </div>
@@ -196,7 +196,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="group relative overflow-hidden rounded-2xl border-2 border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand-2/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand-2/30">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-2/10 text-brand-2">
               <Code2 className="h-6 w-6" />
             </div>
@@ -206,7 +206,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="group relative overflow-hidden rounded-2xl border-2 border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-orange-500/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-orange-500/30">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500">
               <Sparkles className="h-6 w-6" />
             </div>
