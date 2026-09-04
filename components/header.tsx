@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import Link from "next/link"
 import { Code, Menu, X } from "lucide-react"
@@ -18,21 +18,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-md">
       <div className="relative mx-auto flex h-14 max-w-[1500px] items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link 
+        <a 
           href="/" 
           className="group flex items-center gap-2.5 rounded-xl px-2 py-1.5 -ml-2 transition-all hover:bg-white/10 active:scale-95 z-50"
-          onClick={(e) => {
-            closeMenu()
-            if (window.location.pathname === '/') {
-              e.preventDefault()
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }
-          }}
+          onClick={closeMenu}
         >
           <span className="text-sm font-bold tracking-tight text-foreground sm:text-base uppercase tracking-widest">
             Azorb
           </span>
-        </Link>
+        </a>
         
         {/* Desktop Navigation (Centered) */}
         <nav className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8 text-sm font-medium text-muted-foreground">
