@@ -13,12 +13,7 @@ export default function ContactPage() {
   const [selectedBrowser, setSelectedBrowser] = useState("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      alert("送信機能は現在セットアップ中です。\n（デモ用の仮送信です）");
-      setIsSubmitting(false);
-    }, 1000);
   };
 
   const inputClass = "w-full bg-background border border-border rounded-lg px-4 py-3 text-foreground placeholder-muted-foreground/40 focus:outline-none focus:border-brand focus:ring-1 focus:ring-brand transition-all shadow-sm";
