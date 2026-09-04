@@ -186,7 +186,7 @@ export default function Page() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-3">
-          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand/50 hover:shadow-xl hover:-translate-y-1">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand/10 text-brand">
               <CheckCircle2 className="h-6 w-6" />
             </div>
@@ -196,7 +196,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand-2/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-brand-2/50 hover:shadow-xl hover:-translate-y-1">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-2/10 text-brand-2">
               <Code2 className="h-6 w-6" />
             </div>
@@ -206,7 +206,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-orange-500/30">
+          <div className="group relative overflow-hidden rounded-2xl border-[3px] border-border bg-card p-6 sm:p-8 transition-all duration-150 ease-out hover:border-orange-500/50 hover:shadow-xl hover:-translate-y-1">
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/10 text-orange-500">
               <Sparkles className="h-6 w-6" />
             </div>
