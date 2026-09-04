@@ -6,7 +6,7 @@ export default function Page() {
     <main className="mx-auto min-h-screen w-full max-w-[1500px] px-4 py-8 sm:px-6 lg:px-8">
       
       {/* Hero Section */}
-      <section className="relative mb-16 overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-surface via-card to-[#1a2040] px-6 py-16 shadow-2xl sm:px-10 sm:py-24 text-center">
+      <section className="relative mb-16 overflow-hidden rounded-3xl border border-border bg-gradient-to-br from-surface via-card to-[#1a2040] px-6 py-12 shadow-2xl sm:px-10 sm:py-16 text-center">
         <div className="pointer-events-none absolute -right-16 -top-24 h-72 w-72 rounded-full bg-brand/25 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 left-1/3 h-56 w-56 rounded-full bg-brand-2/15 blur-3xl" />
 
@@ -25,7 +25,7 @@ export default function Page() {
             ニッチな課題に、<br className="hidden sm:block" />ピンポイントで効くツールを。
           </h1>
 
-          <p className="max-w-2xl text-base sm:text-lg text-muted-foreground mb-10 leading-loose">
+          <p className="max-w-2xl text-base sm:text-lg text-muted-foreground leading-loose">
             大手が手を出さない細かな業務のボトルネック解消から、<br className="hidden sm:block" />
             日常にクスッと笑いを提供するユーモア溢れるWebアプリまで。<br className="hidden sm:block" />
             個人開発ならではの身軽さと圧倒的なコストパフォーマンスで、<br className="hidden sm:block" />
