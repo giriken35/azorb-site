@@ -57,7 +57,7 @@ export default function Page() {
                 <span className="rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-semibold text-emerald-600">開発中</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">SaaS向けモダンUIボイラープレート</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 洗練されたグラスモーフィズムデザインと高速なパフォーマンスを備えた、商用利用可能なNext.jsテンプレート。個人開発だからこそ実現できる低価格で、開発者のUI実装コストを削減します。
               </p>
               <div className="mt-auto">
@@ -83,7 +83,7 @@ export default function Page() {
                 <span className="rounded-md bg-brand/10 px-2 py-1 text-xs font-semibold text-brand">無料公開中</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">住所データ一括正規化ツール</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 エクセル等で表記揺れの激しい住所データを一瞬で統一し、緯度経度を自動補完するブラウザ完結型のWebツール。手作業による名寄せ作業をゼロにし、業務効率を劇的に改善します。
               </p>
               <div className="mt-auto">
@@ -109,7 +109,7 @@ export default function Page() {
                 <span className="rounded-md bg-fuchsia-500/10 px-2 py-1 text-xs font-semibold text-fuchsia-600">AI / Python</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">万能オートキャプチャ＆AI抽出・翻訳</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 連続スクリーンショットから、AI（Gemini等）を用いてテキストを自動抽出・翻訳し、人間用のツリー構造（マインドマップ）で整理するデスクトップツールです。
               </p>
               <div className="mt-auto">
@@ -135,7 +135,7 @@ export default function Page() {
                 <span className="rounded-md bg-blue-500/10 px-2 py-1 text-xs font-semibold text-blue-600">Python / Scraping</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">自分専用 広告なし地元ニュースサイト</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 「地元のニュースを読みたいが、広告だらけで読みづらい」という不満から自作した専用アグリゲーター。Pythonで定期的に記事をスクレイピング・要約し、Next.jsの快適なUIで配信しています。
               </p>
               <div className="mt-auto">
@@ -160,7 +160,7 @@ export default function Page() {
                 <span className="rounded-md bg-orange-500/10 px-2 py-1 text-xs font-semibold text-orange-600">公開中</span>
               </div>
               <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground leading-snug">寿命カウントダウンタイマー</h3>
-              <p className="mb-6 text-sm sm:text-base text-muted-foreground flex-1 leading-loose">
+              <p className="mb-6 text-base text-foreground/80 flex-1 leading-relaxed">
                 自分の残された人生の時間をリアルタイムで刻み続ける、少しシュールで刺激的なタイマーアプリ。遊び心の中に「今日という1日の大切さ」を再認識させるユーモアを込めています。
               </p>
               <div className="mt-auto">
