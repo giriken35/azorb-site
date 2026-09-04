@@ -1,4 +1,4 @@
-﻿import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
+import { Code2, Layout, CheckCircle2, Map, Hourglass, ExternalLink, ArrowDown, Sparkles, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function Page() {
@@ -228,7 +228,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">AI & AI Agents</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Cursor', 'ChatGPT', 'Gemini', 'Gemini Notebook', 'Google Antigravity'].map((skill) => (
+                {['Cursor', 'ChatGPT', 'Gemini', 'Google Antigravity'].map((skill) => (
                   <li key={skill} className="rounded-full border border-brand/30 bg-brand/5 px-5 py-2 text-sm font-bold text-brand shadow-sm">
                     {skill}
                   </li>
@@ -238,7 +238,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Language / Framework</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Python', 'TypeScript', 'Next.js', 'React', 'FastAPI', 'Tailwind CSS'].map((skill) => (
+                {['Python', 'TypeScript', 'Next.js', 'FastAPI', 'Tailwind CSS'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
                     {skill}
                   </li>
@@ -248,7 +248,7 @@ export default function Page() {
             <div>
               <h4 className="text-sm font-bold text-brand mb-4 uppercase tracking-widest">Infrastructure / BaaS</h4>
               <ul className="flex flex-wrap gap-2.5">
-                {['Vercel', 'Supabase', 'Upstash', 'Cloudflare', 'Stripe', 'Brevo', 'GitHub'].map((skill) => (
+                {['Vercel', 'Supabase', 'Upstash', 'Cloudflare', 'Stripe', 'Brevo', 'Render'].map((skill) => (
                   <li key={skill} className="rounded-full border border-border bg-card px-5 py-2 text-sm font-medium text-foreground shadow-sm">
                     {skill}
                   </li>
