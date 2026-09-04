@@ -1,4 +1,4 @@
-﻿"use client"
+"use client"
 
 import Link from "next/link"
 import { Code, Menu, X } from "lucide-react"
@@ -21,7 +21,23 @@ export function Header() {
         <a 
           href="/" 
           className="group flex items-center gap-2.5 rounded-xl px-2 py-1.5 -ml-2 transition-all hover:bg-white/10 active:scale-95 z-50"
-          onClick={closeMenu}
+          onClick={(e) => {
+            e.preventDefault()
+            closeMenu()
+            
+            import("sonner").then(({ toast }) => {
+              toast.success("ページを更新しました", {
+                position: "top-center",
+                duration: 2000,
+                style: { padding: "8px 24px", minHeight: "36px", fontSize: "14px", borderRadius: "100px", width: "max-content", margin: "0 auto", left: 0, right: 0 }
+              })
+            })
+
+            if (window.location.hash) {
+              window.history.pushState("", document.title, window.location.pathname + window.location.search)
+            }
+            window.scrollTo({ top: 0, behavior: "smooth" })
+          }}
         >
           <span className="text-base font-bold tracking-tight text-foreground sm:text-2xl uppercase tracking-widest">
             Azorb
