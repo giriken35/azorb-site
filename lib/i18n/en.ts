@@ -30,7 +30,7 @@
       cta: "Launch App"
     },
     p3: {
-      b1: "Desktop App", b2: "AI / Python",
+      b1: "Desktop App", b2: "AI# Python",
       t: "Auto-Capture & AI Extraction Node",
       d: "A desktop utility that automatically extracts and translates text from continuous screenshots using AI (Gemini, etc.), organizing the data into a human-readable mind map structure.",
       cta: "Launch App"
@@ -38,13 +38,13 @@
     p4: {
       b1: "Personal", b2: "Python / Scraping",
       t: "Ad-Free Local News Aggregator",
-      d: "Born from the frustration of "wanting to read local news but hating the ads." This custom aggregator uses Python to periodically scrape and summarize articles, delivered via a seamless Next.js UI.",
+      d: "Born from the frustration of \"ing to read local news but hating the ads.\" This custom aggregator uses Python to periodically scrape and summarize articles, delivered via a seamless Next.js UI",
       cta: "Visit Site"
     },
     p5: {
       b1: "Life Style", b2: "Live",
       t: "Lifespan Countdown Timer",
-      d: "A slightly surreal and provocative timer app that ticks away your remaining lifespan in real-time. It's built with a sense of humor to remind you of the preciousness of "today."",
+      d: "A slightly surreal and provocative timer app that ticks away your remaining lifespan in real-time. It's built with a sense of humor to remind you of the preciousness of \"today.\"",
       cta: "Visit Site"
     }
   },
@@ -53,7 +53,7 @@
     subtitle: "3 Core Pillars of Azorb",
     f1: {
       t: "Solving Niche Pain Points",
-      d: "We identify and build targeted automation tools for "hyper-local but guaranteed frustrations"—the exact type of micro-markets that large enterprises consider too small to enter."
+      d: "We identify and build targeted automation tools for \"hyper-local but guaranteed frustrations\"-the exact type of micro-markets that large enterprises consider too small to enter."
     },
     f2: {
       t: "Unbeatable Cost Efficiency",
@@ -82,19 +82,17 @@
     v2_2: "Providing developer assets (e.g., UI templates)",
     v2_3: "Operating niche products focused on small-to-medium scale automation",
     l3: "Location",
-    v3: "Shibuya Dogenzaka Tokyu Bldg 2F-C
-1-10-8 Dogenzaka, Shibuya-ku
-Tokyo, Japan 150-0043",
+    v3: "Shibuya Dogenzaka Tokyu Bldg 2F-C\n1-10-8 Dogenzaka, Shibuya-ku\nTokyo, Japan 150-0043",
     l4: "Contact",
     v4: "Go to Contact Form",
     b_title: "Brand Identity",
-    b_v1: ""A to Z" × "Orbit" = Azorb",
-    b_v2: "(/əˈzɔːrb/)",
-    b_v3: "Once launched, it spins autonomously, generating value perpetually. Our studio's philosophy is architecting "unmanned, meticulously self-running ecosystems (Products / SaaS)" that trace orbits in space.",
+    b_v1: "\"A to Z\" × \"Orbit\" = Azorb",
+    b_v2: "(/ęf͔�@rb/)",
+    b_v3: "Once launched, it spins autonomously, generating value perpetually. Our studio's philosophy is architecting \"unmanned, meticulously self-running ecosystems (Products / SaaS)\" that trace orbits in space.",
     c_title: "Concept",
-    c_v1: "An independent product studio specializing in Micro-SaaS and AI/automation apps, built on the concept of "creating what tech giants won't, but someone definitely needs."",
+    c_v1: "An independent product studio specializing in Micro-SaaS and AI/automation apps, built on the concept of \"creating what tech giants won't, but someone definitely needs.\"",
     cw_title: "Client Works",
-    cw_v1: "We primarily prioritize developing our in-house products. However, we do accept select client requests as special slots—strictly for those who resonate with Azorb's design and tech stack, and are looking for "speedy development and automation tools powered by the agility of a solo indie studio."",
+    cw_v1: "We primarily prioritize developing our in-house products. However, we do accept select client requests as special slots-strictly for those who resonate with Azorb's design and tech stack, and are looking for \"speedy development and automation tools powered by the agility of a solo indie studio.\"",
     note: "* For business negotiations, contract work, services, or development requests, please reach out via the contact form below."
   },
   footer: {
