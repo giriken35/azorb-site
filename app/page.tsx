@@ -270,7 +270,7 @@ export default function Page() {
           <div className="space-y-6 text-muted-foreground text-sm sm:text-base leading-loose">
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">屋号 / Brand</strong>
-              <div className="flex-1">Azorb (アゾーブ)</div>
+              <div className="flex-1 text-foreground font-medium text-base">Azorb</div>
             </div>
             <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
               <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">事業内容</strong>
