@@ -41,7 +41,7 @@ export default function ContactPage() {
           </p>
 
           <form 
-            action="#" 
+            action="https://formspree.io/f/mbgjkyea" 
             method="POST" 
             onSubmit={handleSubmit}
             className="space-y-10"
@@ -269,9 +269,6 @@ export default function ContactPage() {
                   </>
                 )}
               </button>
-              <p className="text-center text-muted-foreground text-xs mt-4">
-                ※現在、送信機能はセットアップ中です。
-              </p>
             </div>
           </form>
         </div>
