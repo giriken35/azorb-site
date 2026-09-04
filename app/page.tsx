@@ -268,23 +268,25 @@ export default function Page() {
             <p className="mt-2 text-sm text-muted-foreground font-medium">スタジオ概要と基本情報</p>
           </div>
           <div className="space-y-6 text-muted-foreground text-sm sm:text-base leading-loose">
-            <div className="flex justify-between border-b border-border/70 pb-5">
-              <strong className="text-foreground font-bold min-w-32 tracking-tight">屋号 / Brand</strong>
-              <span>Azorb (アゾーブ)</span>
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
+              <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">屋号 / Brand</strong>
+              <div className="flex-1">Azorb (アゾーブ)</div>
             </div>
-            <div className="flex justify-between border-b border-border/70 pb-5">
-              <strong className="text-foreground font-bold min-w-32 tracking-tight">事業内容</strong>
-              <span className="text-right">自社Webサービスの企画・開発・運営<br/>ニッチ領域向け自動化ツールの提供</span>
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
+              <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">事業内容</strong>
+              <div className="flex-1 text-foreground/90 leading-relaxed">自社Webサービスの企画・開発・運営<br/>ニッチ領域向け自動化ツールの提供</div>
             </div>
-            <div className="flex justify-between border-b border-border/70 pb-5">
-              <strong className="text-foreground font-bold min-w-32 tracking-tight">所在地</strong>
-              <span className="text-right">〒150-0043<br/>東京都渋谷区道玄坂1丁目10番8号<br/>渋谷道玄坂東急ビル2F−C</span>
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
+              <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">所在地</strong>
+              <div className="flex-1 text-foreground/90 leading-relaxed">〒150-0043<br/>東京都渋谷区道玄坂1丁目10番8号<br/>渋谷道玄坂東急ビル2F-C</div>
             </div>
-            <div className="flex justify-between border-b border-border/70 pb-5">
-              <strong className="text-foreground font-bold min-w-32 tracking-tight">お問い合わせ</strong>
-              <a href="/contact" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
-                お問い合わせフォーム
-              </a>
+            <div className="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-12 border-b border-border/70 pb-5">
+              <strong className="text-foreground font-bold sm:min-w-40 tracking-tight shrink-0">お問い合わせ</strong>
+              <div className="flex-1">
+                <a href="/contact" target="_blank" rel="noopener noreferrer" className="text-brand hover:underline inline-flex items-center gap-1 font-semibold transition-colors">
+                  お問い合わせフォーム
+                </a>
+              </div>
             </div>
             <div className="pt-4 space-y-4">
               <p>
