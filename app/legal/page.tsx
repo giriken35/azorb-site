@@ -42,7 +42,7 @@ export default function LegalPage() {
                 </tr>
                 <tr>
                   <th className="py-4 px-6 bg-muted/50 font-medium text-foreground border-r border-border">メールアドレス</th>
-                  <td className="py-4 px-6 text-muted-foreground">katarigikatarigi@gmail.com</td>
+                  <td className="py-4 px-6 text-muted-foreground">info@azorb.co</td>
                 </tr>
                 <tr>
                   <th className="py-4 px-6 bg-muted/50 font-medium text-foreground border-r border-border">販売価格</th>

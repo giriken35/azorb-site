@@ -17,7 +17,7 @@ export default function TermsPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-8">利用規約</h1>
           
           <div className="prose prose-sm sm:prose-base prose-slate dark:prose-invert max-w-none space-y-6">
-            <p className="text-muted-foreground">最終更新日：202X年X月X日</p>
+            <p className="text-muted-foreground">最終更新日：2026年11月10日</p>
             
             <section>
               <h2 className="text-lg font-semibold text-foreground mt-8 mb-4">第1条（適用）</h2>

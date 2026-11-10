@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           <h1 className="text-2xl sm:text-3xl font-bold text-foreground mb-8">プライバシーポリシー</h1>
           
           <div className="prose prose-sm sm:prose-base prose-slate dark:prose-invert max-w-none space-y-6">
-            <p className="text-muted-foreground">最終更新日：202X年X月X日</p>
+            <p className="text-muted-foreground">最終更新日：2026年11月10日</p>
             <p>[運営者名/会社名]（以下、「当社」）は、本ウェブサイト上で提供するサービス（以下、「本サービス」）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」）を定めます。</p>
             
             <section>
